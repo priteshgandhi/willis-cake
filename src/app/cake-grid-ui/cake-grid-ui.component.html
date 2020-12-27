@@ -1,0 +1,25 @@
+<div class="cake__list-container">
+    <div *ngFor="let cake of cakeData">
+        <div class="cake__container">
+            <div class="cake__image-container">
+                <img class="cake__image" src='{{cake.cakeImageUrl}}'>
+            </div>
+            <div class="cake__details">
+                <p class="cake__name">{{ cake.cakeName }}</p>
+                <div class="cake__price-container">
+                    <div class="cake__price">
+                        ₹ 800 <span class="cake__price-strikeout">₹ 1000</span> <span class="cake__discount-percentage">20%
+                            OFF</span>
+                    </div>
+                    <div class="cake__ratings">
+                        4.1
+                    </div>
+                </div>
+                <div class="cake__review-count">
+                    <div class="cake__today-text">Get it Today</div>
+                    <div class="cake__review-number">4210 Reviews</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

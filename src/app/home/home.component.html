@@ -1,0 +1,25 @@
+<div class="nav__bar">
+    <div class="nav__logo-div">
+        <img class="nav__bar-logo" src='../../assets/willis-logo.jpeg'>
+    </div>
+    <div class="nav__options-icons-container">
+        <div class="nav__shopping-cart">
+            <mat-icon class="nav__shopping-cart-logo">shopping_cart</mat-icon>
+            <label class="nav__shopping-cart-text">Cart</label>
+        </div>
+        
+        <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>account_circle</mat-icon>
+        </button> -->
+        <div class="nav__account" [matMenuTriggerFor]="menu">
+            <mat-icon class="nav__account-logo">account_circle</mat-icon>
+            <label class="nav__account-text">My Account</label>
+        </div>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>My Profile</button>
+            <button mat-menu-item>Track Orders</button>
+            <button mat-menu-item>My Orders</button>
+        </mat-menu>
+    </div>
+</div>
+<app-cake-grid-ui [cakeData]='jsonCake'></app-cake-grid-ui>
